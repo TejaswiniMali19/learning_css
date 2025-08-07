@@ -30,16 +30,20 @@
         .f_family1{
             font-family: sans-serif;
         }
-        img{
-            width: 100px;
-        }
+       
         .border_img1{
-          border: 4px solid red; 
-          border-color: brown blue red green; 
+            border:4px solid red; 
+            border-radius: 10px; 
+            width: 300px;
         }
         .border_img2{
-          border: 8px double blue;
-          border-radius: 20px 150px 90px 20px;
+            border: 4px double blue;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 40px;
+            border-bottom-right-radius: 40px;
+            border-top-left-radius: 20px;
+            width: 300px;
         }
+        
 
 
