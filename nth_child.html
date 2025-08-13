@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            width: 200px;
+            padding: 10px;
+            list-style-type: none;
+            font-weight: 900;
+        }
+        li{
+            padding: 10px;
+            border: 2px solid red;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        li:nth-child(odd){
+            background-color: yellow;
+        }
+        li:nth-child(even){
+            background-color: darkmagenta;
+            color: white;
+        }
+        li:first-child{
+            background-color: skyblue;
+            color: white;
+        }
+        li:last-child{
+            background-color: brown;
+            color: white;
+        }
+        li:nth-child(5){
+            background-color: blue;
+        }
+        li:nth-child(6){
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <!--ul>li*6{item $}-->
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+        <li>item 6</li>
+        <li>item 7</li>
+        <li>item 8</li>
+    </ul>
+</body>
+</html>
