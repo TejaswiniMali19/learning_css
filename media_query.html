@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>/*MEDIA QUERY*/
+        @media (min-width:320px)and (max-width:767px){
+            body{
+                font-size: 20px;
+                background: skyblue;
+
+            }
+            p{
+                display: none;
+
+            }
+            h1,h3{
+                color: black;
+            }
+            .img1{
+                display: none;
+            }
+        }
+            
+        /* from 768px and up*/
+        
+        @media(min-width: 768px){
+            body{
+                background-color: blueviolet;
+            }
+        }
+
+
+        /* from 1024px and up*/
+        @media(min-width: 1024px){
+            body{
+                background-color: brown;
+            }
+        }
+
+        /* max width query*/
+        /* from 850px and up ,until 950px*/
+        @media (min-width:850px) and (max-width:950px){
+            body{
+                background-color: darkgoldenrod;
+            }
+            h1,h3{
+                color:pink;
+                font-size: 100px;
+            }
+            .img1{
+                display:none;
+            }
+        }
+
+        /**/
+    </style>
+</head>
+<body>
+    <h1>CSS Media Queries</h1>
+    <p>CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+       CSS saves a lot of work. It can control the layout of multiple web pages all at once
+    </p>
+    <img class="img1" src="images/butterfly.jpg" alt="buttrerfly">
+
+
+    <h3>smartphones -<span class="details">from 320px and up </span>(min-width:320px)</h3>
+    <p>RED</p>
+
+    <h3>Tablets, ipads (portait) -<span class="details">from 768px and up(min-width:768px)</span>
+     </h3>  
+     <p>YELLOW</p> 
+
+     <h3>Tablets, ipads (lanscape) -<span class="details">from 1024px and up(min-width:1024px)</span>
+     </h3>  
+     <p>BLUE</p> 
+     <br>
+
+    <h3>Desktops and Laptops -<span class="details">from 1224px and up(min-width:1224px)</span>
+     </h3>  
+     <p>ORANGE</p>
+     <br>
+     
+      <h3>Large Screens -<span class="details">from 1824px and up(min-width:1824px)</span>
+     </h3>  
+     <p>AQUA(zoom out if needed [ctrl &-])</p> 
+
+         <h3>custom media query -<span class="details">from 850px and up, until 950px(min-width:850px) and (max-width:950px)     </span>
+     </h3>  
+     <p>GREEN(zoom out if needed [ctrl &-])</p> 
+
+
+
+
+
+     
+
+    
+</body>
+</html>

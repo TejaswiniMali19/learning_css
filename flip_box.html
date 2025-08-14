@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+               .container{
+            display:flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px;
+            gap: 30px;
+            
+            
+        }
+        .box{
+          /*  background-color: violet;*/
+            border: 3px solid black;
+            height: 200px;
+            width: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            transition: transform 1s ;
+            box-shadow: -5px 5px 10px -2px red;
+            position:relative;
+        }
+        
+        .box1,
+        .box2{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px;
+            position:absolute;
+            top: 0;
+            left: 0;;
+            
+            
+            
+        }
+        .box1{
+            background-color: aqua;
+            
+
+        }
+        .box1:hover{
+            font-size:40px;
+            color: red;
+            box-shadow: inset 0px 0px 10px 0px brown;
+            padding: 20px 30px;
+            transform: rotateY(150deg);
+            transition: 1s;
+            text-shadow: 4px 4px 5px black;
+
+
+        }
+        .box2{
+            background-color: green;
+            z-index:99;
+            transition: 1s;
+        } 
+        .box2:hover{
+            font-size: 60px;
+            color: blue;
+            box-shadow: inset 0px 0px 10px 0px white;
+            padding: 20px 30px;
+             text-shadow: 4px 4px 5px skyblue ;
+            transform: rotateY(180deg);
+        }
+    
+        
+    </style>    
+</head>
+<body>
+   <div class="container">
+    <div class="box box1"><h2>Hello</h2></div>
+    <div class="box box2"><h3>I am Tejaswini</h3></div>
+   </div>
+</body>
+</html>
